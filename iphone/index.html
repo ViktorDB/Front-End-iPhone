@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
+
+    <title></title>
+</head>
+<body>
+
+<div id="compareNav">
+    <div>
+        <div id="selectionLeftDiv">
+            <div id="chosenLeft">iPhone</div>
+            <ul>
+                <li id="left-1">iPhone 2G</li>
+                <li id="left-2">iPhone 3G</li>
+                <li id="left-3">iPhone 3GS</li>
+                <li id="left-4">iPhone 4</li>
+                <li id="left-5">iPhone 4S</li>
+                <li id="left-6">iPhone 5</li>
+                <li id="left-7">iPhone 5C</li>
+                <li>iPhone 5S</li>
+                <li>iPhone 6</li>
+                <li>iPhone 6 PLUS</li>
+            </ul>
+        </div>
+        <!--<select id="selectionLeft">
+            <option value="1">iPhone 2G</option>
+            <option value="2">iPhone 3G</option>
+            <option value="3">iPhone 3GS</option>
+            <option value="4">iPhone 4</option>
+            <option value="5">iPhone 4S</option>
+            <option value="6">iPhone 5</option>
+            <option value="7">iPhone 5C</option>
+            <option value="8">iPhone 5S</option>
+            <option value="9">iPhone 6</option>
+            <option value="10">iPhone 6Plus</option>
+        </select>-->
+
+        <!--<button id="compareButton">
+            Compare
+        </button>-->
+
+        <!--<select id="selectionRight">
+            <option value="1">iPhone 2G</option>
+            <option value="2">iPhone 3G</option>
+            <option value="3">iPhone 3GS</option>
+            <option value="4">iPhone 4</option>
+            <option value="5">iPhone 4S</option>
+            <option value="6">iPhone 5</option>
+            <option value="7">iPhone 5C</option>
+            <option value="8">iPhone 5S</option>
+            <option value="9">iPhone 6</option>
+            <option value="10">iPhone 6Plus</option>
+        </select>-->
+        <div id="selectionRightDiv">
+            <div id="chosenRight">iPhone</div>
+            <ul>
+                <li>iPhone 2G</li>
+                <li>iPhone 3G</li>
+                <li>iPhone 3GS</li>
+                <li>iPhone 4</li>
+                <li>iPhone 4S</li>
+                <li>iPhone 5</li>
+                <li>iPhone 5C</li>
+                <li>iPhone 5S</li>
+                <li>iPhone 6</li>
+                <li>iPhone 6 PLUS</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="compareSubNav">
+    <ul>
+        <li id="filter-design">
+            design
+        </li>
+        <li id="filter-screen">
+            screen
+        </li>
+        <li id="filter-camera">
+            camera
+        </li>
+        <li id="filter-hardware">
+            hardware
+        </li>
+        <li id="filter-battery">
+            battery
+        </li>
+    </ul>
+</div>
+
+<img id="nav-icon" src="images/nav-icon.png" alt="nav"/>
+
+<nav>
+    <img src="images/apple-logo.png" alt="apple logo"/>
+    <ul id="navigation-list">
+        <h1 id="nav-item-home" class="nav-click"><a href="#1">Home</a></h1>
+        <h1 id="nav-tab-history">History <i id="history-sort" class="fa fa-sort-down"></i></h1>
+        <div id="nav-list-history">
+            <li id="nav-item-iphone-1" class="nav-click"><a href="#3">iPhone 2G</a></li>
+            <li id="nav-item-iphone-2" class="nav-click"><a href="#5">iPhone 3G</a></li>
+            <li id="nav-item-iphone-3" class="nav-click"><a href="#7">iPhone 3GS</a></li>
+            <li id="nav-item-iphone-4" class="nav-click"><a href="#9">iPhone 4</a></li>
+            <li id="nav-item-iphone-5" class="nav-click"><a href="#11">iPhone 4S</a></li>
+            <li id="nav-item-iphone-6" class="nav-click"><a href="#13">iPhone 5</a></li>
+            <li id="nav-item-iphone-7" class="nav-click"><a href="#15">iPhone 5C</a></li>
+            <li id="nav-item-iphone-8" class="nav-click"><a href="#17">iPhone 5S</a></li>
+            <li id="nav-item-iphone-9" class="nav-click"><a href="#19">iPhone 6</a></li>
+        </div>
+        <h1 id="nav-tab-overview"><a href="#22">Overview</a></h1>
+    </ul>
+</nav>
+
+
+
+<div id="fullpage">
+
+
+    <div id="page-1" class="section">
+        <h1>The evolution of the iPhone</h1>
+    </div>
+
+    <div id="page-2" class="section">
+        <div>
+            <img src="images/apple.png" alt=""/>
+            <h1>reinvents the phone</h1>
+        </div>
+    </div>
+
+    <div id="page-3" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timelineTopStart">
+
+                </div>
+                <div class="timelineDate">
+
+                </div>
+                <div class="timelineBottom">
+
+                </div>
+<!--                <div class="timelineStart">
+
+                </div>-->
+            </div>
+            <div class="history-right">
+                <div id="page3-iphone-date" class="date">
+                    <h1>iPhone 2G</h1>
+                    2007
+                </div>
+                <div id="page3-iphone-caption" class="iphone-caption">
+                    The phone that changed phones forever
+                </div>
+                <div class="history-images-center-big">
+                    <div id="iphone-2g-front">
+                        <img src="images/history/iphone-2g-rotated.png" alt="iPhone 2G front"/>
+                    </div>
+                    <div id="iphone-2g-back">
+                        <img src="images/history/iphone-2g-back.png" alt="iPhone 2G back"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="page-4" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timeline">
+
+                </div>
+            </div>
+            <div class="history-right">
+            </div>
+        </div>
+    </div>
+
+    <div id="page-5" class="section">
+            <div class="history-page-wrapper">
+                <div class="history-left">
+                    <div class="timelineTop">
+
+                    </div>
+                    <div class="timelineDate">
+
+                    </div>
+                    <div class="timelineBottom">
+
+                    </div>
+                </div>
+                <div class="history-right">
+                    <div id="page5-iphone-date" class="date">
+                        <h1>iPhone 3G</h1>
+                        2008
+                    </div>
+                    <div id="page5-iphone-caption" class="iphone-caption">
+                        Lorem ipsum dolor sit amet
+                    </div>
+                    <div class="history-images-center-big">
+                        <div id="iphone-3g-side">
+                            <img src="images/history/iphone3g-side.png" alt="iPhone 2G front"/>
+                        </div>
+                        <div id="iphone-3g-front">
+                            <img src="images/history/iphone3g-front.png" alt="iPhone 2G front"/>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </div>
+
+    <div id="page-6" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timeline">
+
+                </div>
+            </div>
+            <div class="history-right">
+            </div>
+        </div>
+    </div>
+
+    <div id="page-7" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timelineTop">
+
+                </div>
+                <div class="timelineDate">
+
+                </div>
+                <div class="timelineBottom">
+
+                </div>
+            </div>
+            <div class="history-right">
+                <div id="page7-iphone-date" class="date">
+                    <h1>iPhone 3Gs</h1>
+                    2009
+                </div>
+                <div id="page7-iphone-caption" class="iphone-caption">
+
+                </div>
+                <div class="history-images-center-big">
+                   <div id="iphone-3gs-combo">
+                        <img id="image-3GS" src="images/history/iPhone-3gs-combo-0.png" alt="iPhone 2G front"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="page-8" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timeline">
+
+                </div>
+            </div>
+            <div class="history-right">
+            </div>
+        </div>
+    </div>
+
+    <div id="page-9" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timelineTop">
+
+                </div>
+                <div class="timelineDate">
+
+                </div>
+                <div class="timelineBottom">
+
+                </div>
+            </div>
+            <div class="history-right">
+                <div id="page9-iphone-date" class="date">
+                    <h1>iPhone 4</h1>
+                    2010
+                </div>
+                <div id="page9-iphone-caption" class="iphone-caption">
+                    Lorem ipsum dolor sit amet
+                </div>
+                <div class="history-images-center-big">
+                    <div id="iphone-4-front">
+                        <img src="images/history/iphone-4-front.png" alt="iPhone 2G front"/>
+                    </div>
+                    <div id="iphone-4-side">
+                        <img src="images/history/iphone-4-side.png" alt="iPhone 2G back"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="page-10" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timeline">
+
+                </div>
+            </div>
+            <div class="history-right">
+            </div>
+        </div>
+    </div>
+
+    <div id="page-11" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timelineTop">
+
+                </div>
+                <div class="timelineDate">
+
+                </div>
+                <div class="timelineBottom">
+
+                </div>
+            </div>
+            <div class="history-right">
+                <div id="page11-iphone-date" class="date">
+                    <h1>iPhone 4s</h1>
+                    2011
+                </div>
+                <div id="page11-iphone-caption" class="iphone-caption">
+                    Lorem ipsum dolor sit amet
+                </div>
+                <div class="history-images-center-big">
+                    <div id="iphone-4s-combo-left">
+                        <img src="images/history/iphone-4s-combo-left.png" alt="iPhone 2G front"/>
+                    </div>
+                    <div id="iphone-4s-combo-middle">
+                        <img src="images/history/iphone-4s-combo-middle.png" alt="iPhone 2G front"/>
+                    </div>
+                    <div id="iphone-4s-combo-right">
+                        <img src="images/history/iphone-4s-combo-right.png" alt="iPhone 2G front"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="page-12" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timeline">
+
+                </div>
+            </div>
+            <div class="history-right">
+            </div>
+        </div>
+    </div>
+
+    <div id="page-13" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timelineTop">
+
+                </div>
+                <div class="timelineDate">
+
+                </div>
+                <div class="timelineBottom">
+
+                </div>
+            </div>
+            <div class="history-right">
+                <div id="page13-iphone-date" class="date">
+                    <h1>iPhone 5</h1>
+                    2012
+                </div>
+                <div id="page13-iphone-caption" class="iphone-caption">
+                    Lorem ipsum dolor sit amet
+                </div>
+                <div class="history-images-center-big">
+                    <div id="iphone-5-combo-left">
+                        <img src="images/history/iphone5-combo-left.png" alt="iPhone 2G front"/>
+                    </div>
+                    <div id="iphone-5-combo-right">
+                        <img src="images/history/iphone5-combo-right.png" alt="iPhone 2G front"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="page-14" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timeline">
+
+                </div>
+            </div>
+            <div class="history-right">
+            </div>
+        </div>
+    </div>
+
+    <div id="page-15" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timelineTop">
+
+                </div>
+                <div class="timelineDate">
+
+                </div>
+                <div class="timelineBottom">
+
+                </div>
+            </div>
+            <div class="history-right">
+                <div id="page15-iphone-date" class="date">
+                    <h1>iPhone 5C</h1>
+                    2013
+                </div>
+                <div id="page15-iphone-caption" class="iphone-caption">
+                    Lorem ipsum dolor sit amet
+                </div>
+                <div class="history-images-center-big" id="history-5C-images">
+                    <div id="iphone-5c-combo-1">
+                        <img src="images/history/iphone-5c-combo-1.png" alt="iPhone 2G front"/>
+                    </div>
+                    <div id="iphone-5c-combo-2">
+                        <img src="images/history/iphone-5c-combo-2.png" alt="iPhone 2G front"/>
+                    </div>
+                    <div id="iphone-5c-combo-3">
+                        <img src="images/history/iphone-5c-combo-3.png" alt="iPhone 2G front"/>
+                    </div>
+                    <div id="iphone-5c-combo-4">
+                        <img src="images/history/iphone-5c-combo-4.png" alt="iPhone 2G front"/>
+                    </div>
+                    <div id="iphone-5c-combo-5">
+                        <img src="images/history/iphone-5c-combo-5.png" alt="iPhone 2G front"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="page-16" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timeline">
+
+                </div>
+            </div>
+            <div class="history-right">
+            </div>
+        </div>
+    </div>
+
+    <div id="page-17" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timelineTop">
+
+                </div>
+                <div class="timelineDate">
+
+                </div>
+                <div class="timelineBottom">
+
+                </div>
+            </div>
+            <div class="history-right">
+                <div id="page17-iphone-date" class="date">
+                    <h1>iPhone 5S</h1>
+                    2013
+                </div>
+                <div id="page17-iphone-caption" class="iphone-caption">
+                    Lorem ipsum dolor sit amet
+                </div>
+                <div class="history-images-center-big">
+                    <div id="iphone-5s-combo-1">
+                        <img src="images/history/iphone-5s-combo-1.png" alt="iPhone 2G front"/>
+                    </div>
+                    <div id="iphone-5s-combo-2">
+                        <img src="images/history/iphone-5s-combo-2.png" alt="iPhone 2G front"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="page-18" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timeline">
+
+                </div>
+            </div>
+            <div class="history-right">
+            </div>
+        </div>
+    </div>
+
+    <div id="page-19" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timelineTop">
+
+                </div>
+                <div class="timelineDate">
+
+                </div>
+                <div class="timelineBottom">
+
+                </div>
+            </div>
+            <div class="history-right">
+                <div id="page19-iphone-date" class="date">
+                    <h1>iPhone 6 & 6 plus</h1>
+                    2014
+                </div>
+                <div id="page19-iphone-caption" class="iphone-caption">
+                    More than just bigger
+                </div>
+                <div class="history-images-center-big">
+                    <div id="iphone-6-1">
+                        <img src="images/history/iphone6-1.png" alt="iPhone 2G front"/>
+                    </div>
+
+                    <div id="iphone-6plus-1">
+                        <img src="images/history/iphone6plus-1.png" alt="iPhone 2G front"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="page-20" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timeline">
+
+                </div>
+            </div>
+            <div class="history-right">
+            </div>
+        </div>
+    </div>
+
+    <div id="page-21" class="section">
+        <div class="history-page-wrapper">
+            <div class="history-left">
+                <div class="timelineTop">
+
+                </div>
+                <div class="timelineDate">
+
+                </div>
+                <div class="timelineBottomEnd">
+
+                </div>
+            </div>
+            <div class="history-right">
+                <div id="page21-iphone-date" class="date">
+                    <h1>...</h1>
+                    2015
+                </div>
+                <div id="page21-iphone-caption" class="iphone-caption">
+
+                </div>
+                <div class="history-images-center-big">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="page-22" class="section">
+        <div id="compare-wrapper">
+            <div id="compare-left">
+
+            </div>
+            <div id="compare-right">
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+<script src="scripts/jquery.js"></script>
+<!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
+<script src="scripts/vendors/jquery.easings.min.js"></script>
+<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="scripts/vendors/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.fullPage.js"></script>
+<script src="scripts/readJSON.js"></script>
+
+<script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript" src="scripts/navigation.js"></script>
+<script type="text/javascript" src="scripts/history-animations.js"></script>
+<script type="text/javascript" src="scripts/compare.js"></script>
+
+
+</body>
+</html>

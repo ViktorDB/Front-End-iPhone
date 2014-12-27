@@ -1,0 +1,1382 @@
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+body
+{
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    color: #474747;
+    background-color: whitesmoke;
+}
+
+#fullpage
+{
+    left: 0px;
+}
+
+.section
+{
+    background-color: white !important;
+}
+
+.fp-slidesContainer
+{
+
+}
+
+.slidefullpage
+{
+    -webkit-transition: 0.3s !important;
+    -moz-transition: 0.3s !important;
+    -ms-transition: 0.3s !important;
+    -o-transition: 0.3s !important;
+    transition: 0.3s !important;
+}
+
+/* NAVIGATION */
+
+nav
+{
+    position: absolute;
+
+    left: -250px;
+
+    z-index: 10;
+    height: 100%;
+    width: 250px;
+
+    color: #a0a0a0;
+    text-shadow: 0px 0px 8px #000000;
+
+    background-image: url("../images/tweed.png");
+    -webkit-box-shadow: inset -14px 0px 35px -8px rgba(10, 10, 10, 0.55);
+    -moz-box-shadow: inset -14px 0px 35px -8px rgba(10, 10, 10, 0.55);
+    box-shadow: inset -14px 0px 35px -8px rgba(10, 10, 10, 0.55);
+
+    border-right: 0px solid black;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#nav-icon
+{
+    position: absolute;
+    left: 0px;
+    opacity: 0.7;
+    z-index: 11;
+    width: 50px;
+    padding-top: 5px;
+    cursor: pointer;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+nav img
+{
+    width: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+nav ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav h1
+{
+    padding: 0;
+    margin: 0;
+    padding-left: 30px;
+    font-size: 20px;
+    height: 50px;
+    line-height: 55px;
+    font-weight: lighter;
+
+    border-bottom: 1px solid #434343;
+}
+
+nav h1:hover
+{
+    background-color: rgba(61, 61, 61, 0.40);
+    color: #d7d7d7;
+
+    cursor: pointer;
+
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+
+nav li
+{
+    padding-left: 0px;
+    font-size: 16px;
+    height: 45px;
+    line-height: 50px;
+
+    border-bottom: 1px solid #434343;
+}
+
+nav li:hover
+{
+    background-color: rgba(61, 61, 61, 0.40);
+    color: #d7d7d7;
+
+    cursor: pointer;
+
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+
+#nav-list-history
+{
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: #a0a0a0;
+    height: 100%;
+}
+
+nav ul li a
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 127px;
+    padding-left: 40px;
+}
+
+
+nav h1 i
+{
+    font-size: 24px !important;
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+/* ALL SLIDES */
+
+.section
+{
+    background-color: #ffffff;
+}
+
+.slide{
+
+}
+
+/* SLIDE 1 */
+
+#page-1
+{
+
+}
+
+#page-1 h1
+{
+    text-align: center;
+    font-size: 70px;
+    color: #474747;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+/* SLIDE 2 */
+
+#page-2
+{
+
+}
+
+#page-2 div
+{
+    padding-left: 0%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#page-2 h1
+{
+    width: 70%;
+    float: left;
+    padding-left: 40px;
+    font-size: 70px;
+    color: #474747;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+#page-2 img
+{
+    float: left;
+    position: relative;
+    width: 7%;
+    padding-top: 40px;
+    padding-left: 15%;
+    opacity: 0.8;
+}
+
+/* classes for history */
+
+.history-page-wrapper
+{
+    max-width: 1080px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history-left
+{
+    float: left;
+    width: 10%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+.history-right
+{
+    float: left;
+    width: 85%;
+    height: 100%;
+}
+
+.timeline
+{
+    width: 8%;
+    height: 100%;
+    background-color: #d7d7d7;
+}
+
+.timelineStart
+{
+    width: 15%;
+    height: 100%;
+    background-color: #afafaf;
+}
+
+.timelineTop
+{
+    width: 8%;
+    height: 9.5%;
+    background-color: #d7d7d7;
+}
+.timelineTopStart
+{
+    width: 8%;
+    height: 9.5%;
+    background-color: #ffffff;
+}
+.timelineDate
+{
+    width: 8%;
+    height: 0.5%;
+    border-right: 20px solid #d7d7d7;
+    background-color: #d7d7d7;
+}
+.timelineBottom
+{
+    width: 8%;
+    height: 90%;
+    background-color: #d7d7d7;
+}
+.timelineBottomEnd
+{
+    width: 8%;
+    height: 90%;
+    background-color: #ffffff;
+}
+
+.date
+{
+    height: 20%;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    padding-top: 5%;
+}
+
+.date h1
+{
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.history-images-center-big
+{
+    padding-left: 10%;
+    height: 60%;
+    width: 100%;
+    border: 0px solid red;
+
+}
+
+.iphone-caption
+{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+    overflow: hidden;
+}
+
+/* History iPhone 2g */
+
+
+#page-3
+{
+
+}
+
+#page3-iphone-date
+{
+    height: 10%;
+}
+
+#page3-iphone-caption
+{
+    height: 2%;
+    opacity: 0;
+    padding-top: 8%;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+
+#page-3 #iphone-2g-front
+{
+    float: left;
+    position: relative;
+    z-index: 10;
+    width: 290px;
+    height: auto;
+}
+
+#page-3 #iphone-2g-front img
+{
+    max-width: 400px;
+    width: auto;
+    height: auto;
+}
+
+#page-3 #iphone-2g-back
+{
+    left: -290px;
+    float: left;
+    position: relative;
+    z-index: 9;
+    width: 290px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+
+#page-3 #iphone-2g-back img
+{
+    padding-top: 80px;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+}
+
+/* History iPhone 3g */
+
+#page5-iphone-date
+{
+    height: 10%;
+}
+
+#page5-iphone-caption
+{
+    height: 5%;
+    opacity: 0;
+    padding-top: 9%;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+
+#page-5 #iphone-3g-side
+{
+    float: left;
+    position: relative;
+    z-index: 10;
+    width: 290px;
+    height: auto;
+
+    -ms-transform: rotate(-12deg); /* IE 9 */
+    -webkit-transform: rotate(-12deg); /* Chrome, Safari, Opera */
+    transform: rotate(-12deg);
+
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+#page-5 #iphone-3g-side img
+{
+    max-wid: 60px;
+    width: auto;
+    height: auto;
+}
+
+#page-5 #iphone-3g-front
+{
+    float: left;
+    position: relative;
+    z-index: 10;
+    width: 290px;
+    height: auto;
+}
+
+#page-5 #iphone-3g-front img
+{
+    min-width: 400px;
+    width: auto;
+    height: auto;
+}
+
+
+/* History iPhone 3gs */
+
+#page7-iphone-date
+{
+    height: 25%;
+}
+
+#page7-iphone-caption
+{
+    height: 15%;
+}
+
+#page-7 #iphone-3gs-combo
+{
+    float: left;
+    position: relative;
+    z-index: 10;
+    width: 290px;
+    height: auto;
+}
+
+#page-7 #iphone-3gs-combo img
+{
+    min-width: 600px;
+    width: auto;
+    height: auto;
+}
+
+#image-3GS
+{
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+/* History iPhone 4 */
+
+#page-9
+{
+
+}
+
+#page9-iphone-date
+{
+    height: 10%;
+}
+
+#page9-iphone-caption
+{
+    height: 5%;
+    opacity: 0;
+    padding-top: 9%;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+
+#page-9 #iphone-4-front
+{
+    float: left;
+    position: relative;
+    z-index: 10;
+    width: 290px;
+    height: auto;
+}
+
+#page-9 #iphone-4-front img
+{
+    max-width: 500px;
+    width: auto;
+    height: auto;
+}
+
+#page-9 #iphone-4-side
+{
+    left: 30px;
+    float: left;
+    position: relative;
+    z-index: 9;
+    width: 290px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+
+#page-9 #iphone-4-side img
+{
+    max-height: 950px;
+    width: auto;
+    height: auto;
+}
+
+/* History iPhone 4s */
+
+#page11-iphone-date
+{
+    height: 10%;
+}
+
+#page11-iphone-caption
+{
+    height: 5%;
+    opacity: 0;
+    padding-top: 9%;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+
+#page-11 #iphone-4s-combo-left
+{
+    float: left;
+    left: 270px;
+    position: relative;
+    z-index: 9;
+    width: 290px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+
+#page-11 #iphone-4s-combo-left img
+{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
+#page-11 #iphone-4s-combo-middle
+{
+    float: left;
+    left: -90px;
+    position: relative;
+    z-index: 10;
+    width: 290px;
+    height: auto;
+}
+
+#page-11 #iphone-4s-combo-middle img
+{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
+#page-11 #iphone-4s-combo-right
+{
+    float: left;
+    left: -350px;
+    position: relative;
+    z-index: 9;
+    width: 290px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+
+#page-11 #iphone-4s-combo-right img
+{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
+/* History iPhone 5 */
+
+#page13-iphone-date
+{
+    height: 10%;
+}
+
+#page13-iphone-caption
+{
+    height: 5%;
+    opacity: 0;
+    padding-top: 9%;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+
+#page-13 #iphone-5-combo-left
+{
+    float: left;
+    left: 110px;
+    position: relative;
+    z-index: 10;
+    width: 290px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5;
+    -ms-transition: 1.5;
+    -o-transition: 1.5;
+    transition: 1.5;
+}
+
+#page-13 #iphone-5-combo-left img
+{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
+#page-13 #iphone-5-combo-right
+{
+    float: left;
+    left: -110px;
+    position: relative;
+    z-index: 10;
+    width: 290px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5;
+    -ms-transition: 1.5;
+    -o-transition: 1.5;
+    transition: 1.5;
+}
+
+#page-13 #iphone-5-combo-right img
+{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
+/* History iPhone 5c */
+
+#history-5C-images
+{
+    padding-left: 200px;
+}
+
+#page15-iphone-date
+{
+    height: 10%;
+}
+
+#page15-iphone-caption
+{
+    height: 6%;
+    opacity: 0;
+    padding-top: 9%;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+
+#page-15 #iphone-5c-combo-1
+{
+    float: left;
+    top: 0px;
+    left: -40px;
+    position: relative;
+    z-index: 10;
+    width: 100px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5;
+    -ms-transition: 1.5;
+    -o-transition: 1.5;
+    transition: 1.5;
+}
+
+#page-15 #iphone-5c-combo-1 img
+{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
+#page-15 #iphone-5c-combo-2
+{
+    float: left;
+    top: 0px;
+    left: -20px;
+    position: relative;
+    z-index: 10;
+    width: 100px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5;
+    -ms-transition: 1.5;
+    -o-transition: 1.5;
+    transition: 1.5;
+}
+
+#page-15 #iphone-5c-combo-2 img
+{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
+#page-15 #iphone-5c-combo-3
+{
+    float: left;
+    top: 0px;
+    position: relative;
+    z-index: 10;
+    width: 100px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5;
+    -ms-transition: 1.5;
+    -o-transition: 1.5;
+    transition: 1.5;
+}
+
+#page-15 #iphone-5c-combo-3 img
+{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
+#page-15 #iphone-5c-combo-4
+{
+    float: left;
+    top: 0px;
+    position: relative;
+    z-index: 10;
+    width: 100px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5;
+    -ms-transition: 1.5;
+    -o-transition: 1.5;
+    transition: 1.5;
+}
+
+#page-15 #iphone-5c-combo4 img
+{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
+#page-15 #iphone-5c-combo-5
+{
+    float: left;
+    top: 0px;
+    position: relative;
+    z-index: 10;
+    width: 100px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5;
+    -ms-transition: 1.5;
+    -o-transition: 1.5;
+    transition: 1.5;
+}
+
+#page-15 #iphone-5c-combo-5 img
+{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+}
+
+/* History iPhone 5s */
+
+#page17-iphone-date
+{
+    height: 10%;
+}
+
+#page17-iphone-caption
+{
+    height: 5%;
+    opacity: 0;
+    padding-top: 9%;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+}
+
+#page-17 #iphone-5s-combo-1
+{
+    float: left;
+    position: relative;
+    z-index: 10;
+    width: 290px;
+    height: auto;
+}
+
+#page-17 #iphone-5s-combo-1 img
+{
+    min-width: 300px;
+    width: auto;
+    height: auto;
+}
+
+#page-17 #iphone-5s-combo-2
+{
+    float: left;
+    left: -80px;
+    position: relative;
+    z-index: 9;
+    width: 290px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5;
+    -ms-transition: 1.5;
+    -o-transition: 1.5;
+    transition: 1.5;
+}
+
+#page-17 #iphone-5s-combo-2 img
+{
+    max-width: 255px;
+    width: auto;
+    height: auto;
+}
+
+/* History iPhone 6 */
+
+#page19-iphone-date
+{
+    height: 10%;
+}
+
+#page19-iphone-caption
+{
+    height: 5%;
+    opacity: 0;
+    padding-top: 9%;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+
+}
+
+#page-19 #iphone-6-1
+{
+    float: left;
+    position: relative;
+    z-index: 9;
+    width: 290px;
+    height: auto;
+}
+
+#page-19 #iphone-6-1 img
+{
+    min-width: 300px;
+    width: auto;
+    height: auto;
+}
+
+#page-19 #iphone-6plus-1
+{
+    float: left;
+    position: relative;
+    left: -200px;
+    z-index: 10;
+    width: 290px;
+    height: auto;
+
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5;
+    -ms-transition: 1.5;
+    -o-transition: 1.5;
+    transition: 1.5;
+}
+
+#page-19 #iphone-6plus-1 img
+{
+    min-width: 357px;
+    width: auto;
+    height: auto;
+}
+
+/* History iPhone 6 plus */
+
+/*
+#page21-iphone-date
+{
+    height: 20%;
+}
+
+#page21-iphone-caption
+{
+    height: 15%;
+
+}
+
+#page-21 #iphone-6plus-front
+{
+    float: left;
+    position: relative;
+    z-index: 11;
+    width: 290px;
+    height: auto;
+}
+
+#page-21 #iphone-6plus-front img
+{
+    max-width: 400px;
+    width: auto;
+    height: auto;
+}
+
+#page-21 #iphone-6plus-back
+{
+    float: left;
+    position: relative;
+    z-index: 10;
+    width: 290px;
+    height: auto;
+}
+
+#page-21 #iphone-6plus-back img
+{
+    max-width: 400px;
+    width: auto;
+    height: auto;
+}*/
+
+
+
+/*  COMPARE  */
+
+#compare-wrapper
+{
+    padding-top: 160px;
+    max-width: 1080px;
+    height: 100%;
+    border: 0px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#compareNav
+{
+    padding-top: 0px;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 87px;
+    background-color: #e6e6e6;
+    opacity: 0.0;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#compareNav > div
+{
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+
+
+}
+
+#compareSubNav
+{
+    position: absolute;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    margin-top: 80px;
+    height: 40px;
+    background-color: #afafaf;
+    opacity: 0.0;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#compareSubNav ul
+{
+    list-style: none;
+    width: 500px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+
+}
+
+#compareSubNav ul li
+{
+    padding-top: 10px;
+    padding-bottom: 12px;
+    float: left;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#compareSubNav ul li:hover
+{
+    cursor: pointer;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#filter-design
+{
+    background-color: #e6e6e6;
+}
+
+/*
+#filter-screen:hover
+{
+    background-color: #e6e6e6;
+}
+
+#filter-battery:hover
+{
+    background-color: #e6e6e6;
+}
+
+#filter-hardware:hover
+{
+    background-color: #e6e6e6;
+}
+
+#filter-camera:hover
+{
+    background-color: #e6e6e6;
+}*/
+
+.subnavhover
+{
+    background-color: #e6e6e6;
+}
+
+.compare-box
+{
+    width: 100%;
+}
+
+#compare-left
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#compare-right
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+/* COMPARE CLASSES */
+
+.compare-img-iphone
+{
+    height: 55vh;
+    overflow: hidden;
+}
+
+.compare-name-iphone
+{
+    text-align: center;
+    font-size: 28px;
+    height: 5vh;
+}
+
+#compare-wrapper img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    max-height: 50vh;
+}
+
+#compare-wrapper table
+{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    height: 15vh;
+}
+
+#compare-wrapper table td
+{
+    padding: 5px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+
+#compare-wrapper table tr:nth-child(even)
+{
+    background-color: white;
+}
+
+#compare-wrapper table tr:nth-child(odd)
+{
+    background-color: #f9f9f9;
+}
+
+#selectionLeft
+{
+    position: relative;
+    left: 5%;
+    width: 35%;
+}
+
+#selectionRight
+{
+    position: relative;
+    left: 45%;
+    width: 40%;
+}
+
+#compareButton
+{
+    position: relative;
+    left: 5%;
+    width: 20%;
+}
+
+#compareButton:hover
+{
+    background-color: white;
+}
+
+select {
+    cursor: pointer;
+    text-align: center;
+    background: transparent;
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+}
+
+textarea:focus, input:focus, select:focus, option:focus, button:focus{
+    outline: 0;
+}
+
+button
+{
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: whitesmoke;
+    padding: 10px;
+    box-shadow: 0;
+}
+
+select option
+{
+    padding-left: 50px;
+}
+
+
+
+#selectionLeftDiv
+ {
+    position: relative;
+     float: left;
+     width: 50%;
+     text-align: center;
+     background-color: red;
+     min-height: 87px;
+    height: auto;
+    overflow: visible;
+ }
+
+#selectionLeftDiv ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#selectionLeftDiv ul li
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+#selectionLeftDiv ul li:hover
+{
+    background-color: grey;
+}
+
+#selectionRightDiv
+{
+    position: relative;
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: red;
+    min-height: 87px;
+    height: auto;
+    overflow: visible;
+}
+
+#selectionRightDiv ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#selectionRightDiv ul li
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+#selectionRightDiv ul li:hover
+{
+    background-color: grey;
+}
+
+
+#chosenLeft
+{
+    height: 87px;
+    line-height: 87px;
+    font-size: 30px;
+}
+
+#chosenRight
+{
+    height: 87px;
+    line-height: 87px;
+    font-size: 30px;
+}
