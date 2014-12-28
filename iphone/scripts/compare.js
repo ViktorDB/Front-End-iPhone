@@ -63,7 +63,7 @@ $(".selectListLeft").click(function(e){
 
     $( "#selectionLeftDiv" ).css( "height", "80px" );
 
-    $( "#selectionLeftDiv" ).css( "background-color", "#e6e6e6" );
+    $( "#selectionLeftDiv" ).css( "background-color", "#f2f2f2" );
 
     $( "#compareSubNav" ).css( "display", "block" );
     setTimeout(function(){ $( "#compareSubNav" ).css( "opacity", "1" ); }, 5);
@@ -104,7 +104,7 @@ $("#selectionLeftDiv").click(function(){
     setTimeout(function(){ $( "#compareSubNav" ).css( "display", "none" ); }, 300);
 
     $("#selectionRightDiv").css( "height", "80px" );
-    $( "#selectionRightDiv" ).css( "background-color", "#e6e6e6" );
+    $( "#selectionRightDiv" ).css( "background-color", "#f2f2f2" );
 
 });
 
@@ -115,7 +115,7 @@ $("#selectionRightDiv").click(function(){
     setTimeout(function(){ $( "#compareSubNav" ).css( "display", "none" ); }, 300);
 
     $("#selectionLeftDiv").css( "height", "80px" );
-    $( "#selectionLeftDiv" ).css( "background-color", "#e6e6e6" );
+    $( "#selectionLeftDiv" ).css( "background-color", "#f2f2f2" );
 });
 
 
@@ -127,7 +127,7 @@ $('#filter-design').click(function()
     hideAllFilters();
     $('.compare-design-iphone').css('display', 'block');
     unclickAllFilters();
-    $('#filter-design').css('background-color', '#e6e6e6');
+    $('#filter-design').css('background-color', '#f2f2f2');
 
 });
 
@@ -136,7 +136,7 @@ $('#filter-screen').click(function()
     hideAllFilters();
     $('.compare-screen-iphone').css('display', 'block');
     unclickAllFilters();
-    $('#filter-screen').css('background-color', '#e6e6e6');
+    $('#filter-screen').css('background-color', '#f2f2f2');
 });
 
 $('#filter-camera').click(function()
@@ -144,7 +144,7 @@ $('#filter-camera').click(function()
     hideAllFilters();
     $('.compare-camera-iphone').css('display', 'block');
     unclickAllFilters();
-    $('#filter-camera').css('background-color', '#e6e6e6');
+    $('#filter-camera').css('background-color', '#f2f2f2');
 });
 
 $('#filter-hardware').click(function()
@@ -152,7 +152,7 @@ $('#filter-hardware').click(function()
     hideAllFilters();
     $('.compare-hardware-iphone').css('display', 'block');
     unclickAllFilters();
-    $('#filter-hardware').css('background-color', '#e6e6e6');
+    $('#filter-hardware').css('background-color', '#f2f2f2');
 });
 
 $('#filter-battery').click(function()
@@ -160,7 +160,7 @@ $('#filter-battery').click(function()
     hideAllFilters();
     $('.compare-battery-iphone').css('display', 'block');
     unclickAllFilters();
-    $('#filter-battery').css('background-color', '#e6e6e6');
+    $('#filter-battery').css('background-color', '#f2f2f2');
 });
 
 function hideAllCompares()

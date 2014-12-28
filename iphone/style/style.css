@@ -1088,7 +1088,6 @@ nav h1 i
     padding-top: 160px;
     max-width: 1080px;
     height: 100%;
-    border: 0px solid red;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1101,7 +1100,7 @@ nav h1 i
     z-index: 1;
     width: 100%;
     height: 80px;
-    background-color: #e6e6e6;
+    background-color: #f2f2f2;
     opacity: 0.0;
 
     -webkit-transition: 0.3s;
@@ -1180,7 +1179,7 @@ nav h1 i
 
 #filter-design
 {
-    background-color: #e6e6e6;
+    background-color: #f2f2f2;
 }
 
 /*
@@ -1206,7 +1205,7 @@ nav h1 i
 
 .subnavhover
 {
-    background-color: #e6e6e6;
+    background-color: #f2f2f2;
 }
 
 .compare-box
@@ -1346,7 +1345,7 @@ select option
      float: left;
      width: 50%;
      text-align: center;
-     background-color: #e6e6e6;
+     background-color: #f2f2f2;
     min-height: 80px;
     height: 80px;
     overflow: hidden;
@@ -1390,7 +1389,7 @@ select option
 #selectionLeftDiv ul li:hover
 {
     background-color: #afafaf;;
-    color: #e6e6e6;
+    color: #f2f2f2;
 }
 
 #selectionRightDiv
@@ -1399,7 +1398,7 @@ select option
     float: left;
     width: 50%;
     text-align: center;
-    background-color: #e6e6e6;
+    background-color: #f2f2f2;
     min-height: 80px;
     height: 80px;
     overflow: hidden;
@@ -1444,7 +1443,7 @@ select option
 #selectionRightDiv ul li:hover
 {
     background-color: #afafaf;;
-    color: #e6e6e6;;
+    color: #f2f2f2;;
 }
 
 
@@ -1467,18 +1466,18 @@ select option
 
 /* MAP */
 
-#page-23
+#page-24
 {
     height: 100%;
 }
 
-#page-23 section
+#page-24 section
 {
     height: 10%;
     margin-bottom: 40px;
 }
 
-#page-23 section h2
+#page-24 section h2
 {
     font-weight: lighter;
     font-size: 45px;

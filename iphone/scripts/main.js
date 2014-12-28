@@ -25,7 +25,7 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
 
         //Navigation
-        anchors:['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23'],
+        anchors:['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24'],
         navigation: false,
 
         //Scrolling
@@ -222,6 +222,22 @@ $(document).ready(function() {
             }
 
 
+            if (index == 22 && direction == 'down' && clickedNavigation == false) {
+                //alert("Going to section 4!");
+                //setTimeout(function(){ animateIphone2G(); }, 2000);
+                setTimeout(function(){ $.fn.fullpage.moveTo(24); }, 100);
+
+            }
+
+            if (index == 24 && direction == 'up' && clickedNavigation == false) {
+                //alert("Going to section 4!");
+                //setTimeout(function(){ animateIphone2G(); }, 2000);
+                setTimeout(function(){ $.fn.fullpage.moveTo(22); }, 100);
+
+            }
+
+
+
             else if (index == 21 && direction == 'down') {
                 //alert("Going to section 22!");
                 setTimeout(function(){ animateCompareNav(); }, 500);
@@ -233,6 +249,7 @@ $(document).ready(function() {
                 setTimeout(function(){ animateCompareNavHide(); }, 1);
 
             }
+
 
 
 
