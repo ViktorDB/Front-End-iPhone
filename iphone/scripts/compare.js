@@ -216,3 +216,13 @@ function unclickAllFilters()
     $('#filter-hardware').css('background-color', '#afafaf');
     $('#filter-battery').css('background-color', '#afafaf');
 }
+
+setTimeout(function()
+{
+    hideAllCompares();
+    hideAllFilters();
+    $('#compare-left-iphone-1').css('display', 'block');
+    $('#compare-right-iphone-1').css('display', 'block');
+    $('.compare-design-iphone').css('display', 'block');
+
+}, 500);
