@@ -13,7 +13,6 @@ var animation6 = false;
 var animation7 = false;
 var animation8 = false;
 var animation9 = false;
-var animation10 = false;
 
 $( "nav" ).click(function() {
 
@@ -322,7 +321,7 @@ $(document).ready(function() {
 
 
             //using index
-            if(index == 22 && animation10 == false){
+            if(index == 22){
                 setTimeout(function(){ animateCompareNav();animation10 = true; }, 1);
             }
 

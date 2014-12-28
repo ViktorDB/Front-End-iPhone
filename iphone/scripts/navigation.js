@@ -62,11 +62,23 @@ $( "#nav-tab-history" ).click(function() {
     if(showNavListHistory == false)
     {
         $("#nav-list-history").css('height', '420px');
+
+        $("#history-sort").css('-webkit-transform', 'rotate(180deg)');
+        $("#history-sort").css(' -ms-transform', 'rotate(180deg)');
+        $("#history-sort").css('transform', 'rotate(180deg)');
+        $("#history-sort").css('margin-top', '15px');
+
         showNavListHistory = true;
     }
     else
     {
         $("#nav-list-history").css('height', '0px');
+
+        $("#history-sort").css('-webkit-transform', 'rotate(0deg)');
+        $("#history-sort").css(' -ms-transform', 'rotate(0deg)');
+        $("#history-sort").css('transform', 'rotate(0deg)');
+        $("#history-sort").css('margin-top', '10px');
+
         showNavListHistory = false;
     }
 

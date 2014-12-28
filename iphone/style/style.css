@@ -102,13 +102,26 @@ nav h1
 {
     padding: 0;
     margin: 0;
-    padding-left: 30px;
+
     font-size: 20px;
     height: 50px;
     line-height: 55px;
     font-weight: lighter;
 
     border-bottom: 1px solid #434343;
+}
+
+nav h1 a
+{
+    padding-left: 30px;
+    display: block;
+    width: 220px;
+    height: 51px;
+}
+
+#nav-tab-history
+{
+    padding-left: 30px;
 }
 
 nav h1:hover
@@ -124,6 +137,18 @@ nav h1:hover
     -o-transition: 0.1s;
     transition: 0.1s;
 }
+
+nav h1 a:hover
+{
+    color: #d7d7d7;
+    
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+
 
 nav li
 {
@@ -158,6 +183,20 @@ nav li:hover
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+}
+
+#nav-list-history li a:hover
+{
+    color: #d7d7d7;
+}
+
+#history-sort
+{
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s ;
+    -ms-transition: 0.1s ;
+    -o-transition: 0.1s;
+    transition: 0.1s;
 }
 
 nav a
@@ -1061,7 +1100,7 @@ nav h1 i
     left: 0px;
     z-index: 1;
     width: 100%;
-    height: 87px;
+    height: 80px;
     background-color: #e6e6e6;
     opacity: 0.0;
 
@@ -1074,7 +1113,7 @@ nav h1 i
 
 #compareNav > div
 {
-    width: 1080px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
@@ -1103,22 +1142,23 @@ nav h1 i
 #compareSubNav ul
 {
     list-style: none;
-    width: 500px;
+    width: 50%;
+    height: 100%;
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
+    padding-left: 0%;
 
 }
 
 #compareSubNav ul li
 {
-    padding-top: 10px;
-    padding-bottom: 12px;
     float: left;
-    width: 100px;
+    width: 20%;
     height: 100%;
     text-align: center;
+    line-height: 40px;
 
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -1306,11 +1346,30 @@ select option
      float: left;
      width: 50%;
      text-align: center;
-     background-color: red;
-     min-height: 87px;
-    height: auto;
-    overflow: visible;
+     background-color: #e6e6e6;
+    min-height: 80px;
+    height: 80px;
+    overflow: hidden;
+    cursor: pointer;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+    border-radius: 8px;
  }
+
+#selectionLeftDiv:hover
+{
+
+}
+
+#selectionLeftDiv > div
+{
+    height: 80px;
+}
 
 #selectionLeftDiv ul
 {
@@ -1330,7 +1389,8 @@ select option
 
 #selectionLeftDiv ul li:hover
 {
-    background-color: grey;
+    background-color: #afafaf;;
+    color: #e6e6e6;
 }
 
 #selectionRightDiv
@@ -1339,11 +1399,31 @@ select option
     float: left;
     width: 50%;
     text-align: center;
-    background-color: red;
-    min-height: 87px;
-    height: auto;
-    overflow: visible;
+    background-color: #e6e6e6;
+    min-height: 80px;
+    height: 80px;
+    overflow: hidden;
+    cursor: pointer;
+
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+    border-radius: 8px;
 }
+
+#selectionRightDiv:hover
+{
+
+}
+
+#selectionRightDiv > div
+{
+    height: 80px;
+}
+
 
 #selectionRightDiv ul
 {
@@ -1363,7 +1443,8 @@ select option
 
 #selectionRightDiv ul li:hover
 {
-    background-color: grey;
+    background-color: #afafaf;;
+    color: #e6e6e6;;
 }
 
 

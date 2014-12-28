@@ -45,6 +45,79 @@ $( "#compareButton" ).click(function() {
 */
 
 
+$(".selectListLeft").click(function(e){
+
+    var id = this.id;
+    var iphoneName = this.innerHTML;
+
+
+    $("#chosenLeft").html(iphoneName);
+
+    var resLeft = id.split("-");
+
+    var resultLeft = resLeft[1];
+
+
+    hideAllComparesLeft();
+    $('#compare-left-iphone-'+resultLeft).css('display', 'block');
+
+    $( "#selectionLeftDiv" ).css( "height", "80px" );
+
+    $( "#selectionLeftDiv" ).css( "background-color", "#e6e6e6" );
+
+    $( "#compareSubNav" ).css( "display", "block" );
+    setTimeout(function(){ $( "#compareSubNav" ).css( "opacity", "1" ); }, 5);
+
+    e.stopPropagation();
+});
+
+$(".selectListRight").click(function(e){
+    var id = this.id;
+    var iphoneName = this.innerHTML;
+
+
+    $("#chosenRight").html(iphoneName);
+
+    var resRight = id.split("-");
+
+    var resultRight = resRight[1];
+
+
+    hideAllComparesRight();
+    $('#compare-right-iphone-'+resultRight).css('display', 'block');
+
+    $("#selectionRightDiv").css( "height", "80px" );
+
+    $( "#compareSubNav" ).css( "display", "block" );
+    setTimeout(function(){ $( "#compareSubNav" ).css( "opacity", "1" ); }, 5);
+
+    e.stopPropagation();
+});
+
+
+
+
+//click on nav
+$("#selectionLeftDiv").click(function(){
+    $( "#selectionLeftDiv" ).css( "height", "380px" );
+    $( "#compareSubNav" ).css( "opacity", "0" );
+    setTimeout(function(){ $( "#compareSubNav" ).css( "display", "none" ); }, 300);
+
+    $("#selectionRightDiv").css( "height", "80px" );
+    $( "#selectionRightDiv" ).css( "background-color", "#e6e6e6" );
+
+});
+
+$("#selectionRightDiv").click(function(){
+    $( "#selectionRightDiv" ).css( "height", "380px" );
+    $( "#compareSubNav" ).css( "opacity", "0" );
+
+    setTimeout(function(){ $( "#compareSubNav" ).css( "display", "none" ); }, 300);
+
+    $("#selectionLeftDiv").css( "height", "80px" );
+    $( "#selectionLeftDiv" ).css( "background-color", "#e6e6e6" );
+});
+
 
 
 
