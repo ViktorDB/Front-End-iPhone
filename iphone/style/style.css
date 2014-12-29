@@ -5,6 +5,8 @@
     src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
 }
 
+
+
 body
 {
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
@@ -280,8 +282,8 @@ nav h1 i
 {
     float: left;
     position: relative;
-    width: 7%;
-    padding-top: 40px;
+    width: 5%;
+    padding-top: 60px;
     padding-left: 15%;
     opacity: 0.8;
 }
@@ -385,6 +387,7 @@ nav h1 i
 
 .iphone-caption
 {
+    padding-right: 50px;
     width: 100%;
     height: 15%;
     text-align: center;
@@ -431,7 +434,7 @@ nav h1 i
 #page-3 #iphone-2g-front img
 {
     max-width: 400px;
-    width: auto;
+    width: 50vw;
     height: auto;
 }
 
@@ -455,7 +458,7 @@ nav h1 i
 {
     padding-top: 80px;
     max-width: 400px;
-    width: auto;
+    width: 50vw;
     height: auto;
 }
 
@@ -674,6 +677,11 @@ nav h1 i
     z-index: 10;
     width: 290px;
     height: auto;
+}
+
+#page-11 .history-images-center-big
+{
+    zoom: 80%;
 }
 
 #page-11 #iphone-4s-combo-middle img
@@ -1103,6 +1111,8 @@ nav h1 i
     background-color: #f2f2f2;
     opacity: 0.0;
 
+    display: none;
+
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -1130,6 +1140,8 @@ nav h1 i
     height: 40px;
     background-color: #afafaf;
     opacity: 0.0;
+
+    display: none;
 
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -1357,7 +1369,6 @@ select option
     -o-transition: 0.3s;
     transition: 0.3s;
 
-    border-radius: 8px;
  }
 
 #selectionLeftDiv:hover
@@ -1410,7 +1421,7 @@ select option
     -o-transition: 0.3s;
     transition: 0.3s;
 
-    border-radius: 8px;
+
 }
 
 #selectionRightDiv:hover
@@ -1438,11 +1449,12 @@ select option
     width: 100%;
     height: 30px;
     line-height: 30px;
+
 }
 
 #selectionRightDiv ul li:hover
 {
-    background-color: #afafaf;;
+    background-color: #afafaf;
     color: #f2f2f2;;
 }
 
@@ -1454,6 +1466,12 @@ select option
     font-size: 30px;
 }
 
+#chosenLeft:hover
+{
+    background-color: #afafaf;
+    color: #f2f2f2;
+}
+
 #chosenRight
 {
     height: 87px;
@@ -1461,7 +1479,11 @@ select option
     font-size: 30px;
 }
 
-
+#chosenRight:hover
+{
+    background-color: #afafaf;
+    color: #f2f2f2;
+}
 
 
 /* MAP */
@@ -1520,4 +1542,240 @@ select option
     bottom:0;
     width:100%;
     height: 600px;
+}
+
+@media screen and (max-width: 1080px) {
+
+    #nav-icon
+    {
+        width: 80px;
+    }
+
+    .history-images-center-big
+    {
+        zoom: 80%;
+    }
+
+    .iphone-caption
+    {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    #page-11 .history-images-center-big
+    {
+        zoom: 50%;
+    }
+
+    #page-1 h1
+    {
+        zoom: 80%;
+    }
+
+    #page-2 div
+    {
+        zoom: 80%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    #nav-icon
+    {
+        width: 80px;
+    }
+
+    .history-images-center-big
+    {
+        zoom: 70%;
+    }
+
+    .iphone-caption
+    {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    #page-11 .history-images-center-big
+    {
+        zoom: 40%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+
+    #nav-icon
+    {
+        width: 80px;
+    }
+
+/*    #page-3 #iphone-2g-front
+    {
+        float: left;
+        position: relative;
+        z-index: 10;
+        width: 190px;
+        height: auto;
+    }
+
+    #page-3 #iphone-2g-front img
+    {
+        max-width: 200px;
+        width: auto;
+        height: auto;
+    }
+
+    #page-3 #iphone-2g-back
+    {
+        left: -290px;
+        float: left;
+        position: relative;
+        z-index: 9;
+        width: 250px;
+        height: auto;
+
+        -webkit-transition: 1.5s;
+        -moz-transition: 1.5s;
+        -ms-transition: 1.5s;
+        -o-transition: 1.5s;
+        transition: 1.5s;
+    }
+
+    #page-3 #iphone-2g-back img
+    {
+        padding-top: 80px;
+        max-width: 200px;
+        width: auto;
+        height: auto;
+    }*/
+
+    .history-images-center-big
+    {
+        zoom: 60%;
+    }
+
+    .iphone-caption
+    {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    #page-11 .history-images-center-big
+    {
+        zoom: 40%;
+    }
+
+    #page-3 .iphone-caption
+    {
+        padding-bottom: 80px;
+        margin-bottom: 40px;
+    }
+
+    #page-5 .iphone-caption
+    {
+        margin-bottom: 40px;
+        padding-bottom: 50px;
+    }
+
+    #page-7 .iphone-caption
+    {
+        padding-bottom: 80px;
+        margin-bottom: 40px;
+    }
+
+
+    #page-9 .iphone-caption
+    {
+        margin-bottom: 40px;
+        padding-bottom: 50px;
+    }
+
+    #page-13 .iphone-caption
+    {
+        padding-bottom: 100px;
+        margin-bottom: 40px;
+    }
+
+    #page-15 .iphone-caption
+    {
+        padding-bottom: 150px;
+        margin-bottom: 40px;
+    }
+
+    #page-19 .iphone-caption
+    {
+        padding-top: 100px;
+        margin-bottom: 40px;
+    }
+
+    #page-2 div
+    {
+        zoom: 70%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    #nav-icon
+    {
+        width: 80px;
+    }
+
+    .history-images-center-big
+    {
+        zoom: 50%;
+    }
+
+    .iphone-caption
+    {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    #page-11 .history-images-center-big
+    {
+        zoom: 40%;
+    }
+
+    #page-2 div
+    {
+        zoom: 60%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    #nav-icon
+    {
+        width: 80px;
+    }
+
+    .history-images-center-big
+    {
+        zoom: 40%;
+    }
+
+    .iphone-caption
+    {
+        margin-top: 60px;
+        margin-bottom: 90px;
+    }
+
+    #page-11 .history-images-center-big
+    {
+        zoom: 40%;
+    }
+
+    .history-right
+    {
+        padding-top: 50px;
+    }
+
 }

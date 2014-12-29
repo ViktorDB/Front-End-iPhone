@@ -2,6 +2,9 @@
  * Created by Viktor on 13/12/14.
  */
 
+var listLeftOut = false;
+var listRightOut = false;
+
 $( window ).load(function() {
     hideAllCompares();
     hideAllFilters();
@@ -68,6 +71,8 @@ $(".selectListLeft").click(function(e){
     $( "#compareSubNav" ).css( "display", "block" );
     setTimeout(function(){ $( "#compareSubNav" ).css( "opacity", "1" ); }, 5);
 
+    listLeftOut = false;
+
     e.stopPropagation();
 });
 
@@ -91,31 +96,71 @@ $(".selectListRight").click(function(e){
     $( "#compareSubNav" ).css( "display", "block" );
     setTimeout(function(){ $( "#compareSubNav" ).css( "opacity", "1" ); }, 5);
 
+    listRightOut = false;
+
     e.stopPropagation();
 });
 
 
+/*//click on chosen
+$("#chosenLeft").click(function(){
 
-
-//click on nav
-$("#selectionLeftDiv").click(function(){
-    $( "#selectionLeftDiv" ).css( "height", "380px" );
-    $( "#compareSubNav" ).css( "opacity", "0" );
-    setTimeout(function(){ $( "#compareSubNav" ).css( "display", "none" ); }, 300);
-
+    $("#selectionLeftDiv").css( "height", "80px" );
     $("#selectionRightDiv").css( "height", "80px" );
-    $( "#selectionRightDiv" ).css( "background-color", "#f2f2f2" );
 
 });
 
-$("#selectionRightDiv").click(function(){
-    $( "#selectionRightDiv" ).css( "height", "380px" );
-    $( "#compareSubNav" ).css( "opacity", "0" );
-
-    setTimeout(function(){ $( "#compareSubNav" ).css( "display", "none" ); }, 300);
+$("#chosenRight").click(function(){
 
     $("#selectionLeftDiv").css( "height", "80px" );
-    $( "#selectionLeftDiv" ).css( "background-color", "#f2f2f2" );
+    $("#selectionRightDiv").css( "height", "80px" );
+
+});*/
+
+
+//click on nav
+$("#chosenLeft").click(function(){
+    listRightOut = false;
+    if(listLeftOut == false)
+    {
+        $( "#selectionLeftDiv" ).css( "height", "380px" );
+        $( "#compareSubNav" ).css( "opacity", "0" );
+        setTimeout(function(){ $( "#compareSubNav" ).css( "display", "none" ); }, 300);
+
+        $("#selectionRightDiv").css( "height", "80px" );
+        $( "#selectionRightDiv" ).css( "background-color", "#f2f2f2" );
+
+        listLeftOut = true;
+    }
+    else
+    {
+        listLeftOut = false;
+        $( "#selectionLeftDiv" ).css( "height", "80px" );
+    }
+
+
+});
+
+$("#chosenRight").click(function(){
+    listLeftOut = false;
+    if(listRightOut == false) {
+        $("#selectionRightDiv").css("height", "380px");
+        $("#compareSubNav").css("opacity", "0");
+
+        setTimeout(function () {
+            $("#compareSubNav").css("display", "none");
+        }, 300);
+
+        $("#selectionLeftDiv").css("height", "80px");
+        $("#selectionLeftDiv").css("background-color", "#f2f2f2");
+
+        listRightOut = true;
+    }
+    else
+    {
+        listRightOut = false;
+        $( "#selectionRightDiv" ).css( "height", "80px" );
+    }
 });
 
 

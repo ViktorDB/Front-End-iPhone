@@ -244,9 +244,15 @@ $(document).ready(function() {
 
             }
 
-            else if (index == 22) {
+            else if (index == 22 && direction == 'down') {
                 //alert("Going to section 22!");
-                setTimeout(function(){ animateCompareNavHide(); }, 1);
+                setTimeout(function(){ animateCompareNavHide(); }, 50);
+
+            }
+
+            else if (index == 22 && direction == 'up') {
+                //alert("Going to section 22!");
+                setTimeout(function(){ animateCompareNavHide(); }, 50);
 
             }
 

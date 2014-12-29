@@ -2,7 +2,8 @@ L.mapbox.accessToken = 'pk.eyJ1IjoidmlrdG9yZGIiLCJhIjoieDNyLWoyUSJ9.GoQrEycrvamb
 var geolocate = document.getElementById('geolocate');
 var map = L.mapbox.map('map', 'viktordb.kk133cjf',{
 
-    zoomControl: false
+    zoomControl: false,
+    attributionControl: false
 
 });
 
@@ -23,8 +24,7 @@ if (!navigator.geolocation) {
     };
 }
 
-map.touchZoom.disable();
-map.doubleClickZoom.disable();
+
 map.scrollWheelZoom.disable();
 
 // Once we've got a position, zoom and center the map

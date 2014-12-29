@@ -239,12 +239,26 @@ function animateIphone6()
 
 function animateCompareNav()
 {
-    $( "#compareNav" ).css( "opacity", "1" );
-    $( "#compareSubNav" ).css( "opacity", "1" );
+    $( "#compareNav" ).css( "display", "block" );
+    $( "#compareSubNav" ).css( "display", "block" );
+
+    setTimeout(function()
+    {
+        $( "#compareNav" ).css( "opacity", "1" );
+        $( "#compareSubNav" ).css( "opacity", "1" );
+
+    }, 100);
 }
 
 function animateCompareNavHide()
 {
     $( "#compareNav" ).css( "opacity", "0" );
     $( "#compareSubNav" ).css( "opacity", "0" );
+
+    setTimeout(function()
+    {
+        $( "#compareNav" ).css( "display", "none" );
+        $( "#compareSubNav" ).css( "display", "none" );
+
+    }, 100);
 }
