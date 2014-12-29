@@ -32,6 +32,7 @@ function slideNavOpen()
     window.setTimeout(function(){$("#fullpage").removeClass("slidefullpage");}, 500);
 
     $("nav").css('left', '0px');
+    $("nav").css('display', 'block');
     $("#nav-icon").css('left', '250px');
     $("#fullpage").css('left', '250px');
 
@@ -46,7 +47,7 @@ function slideNavClose()
     $( "#fullpage" ).addClass( "slidefullpage" );
     window.setTimeout(function(){$("#fullpage").removeClass("slidefullpage");}, 500);
 
-    $("nav").css('left', '-250px');
+    $("nav").css('left', '-0px');
     $("#nav-icon").css('left', '0px');
     $("#fullpage").css('left', '0px');
 
@@ -83,6 +84,22 @@ $( "#nav-tab-history" ).click(function() {
     }
 
 });
+
+
+window.addEventListener("resize", myFunction);
+
+function myFunction(){
+
+    if ( $(this).height() < 735 ) {
+        $("#navImg").hide('200');
+    }
+    else
+    {
+        $("#navImg").show('200')
+    }
+
+}
+
 
 
 

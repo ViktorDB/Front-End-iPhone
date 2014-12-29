@@ -54,14 +54,14 @@ function animateIphone3GS()
 
     setTimeout(function()
     {
-        $("#image-3GS").attr("src", "http://localhost:63342/iphone/images/history/iphone-3gs-combo-1.png");
+        $("#image-3GS").attr("src", "http://student.howest.be/viktor.de.bock/3NMCT/iphone/images/history/iPhone-3gs-combo-1.png");
         $( "#page7-iphone-caption" ).html("Save your moments");
 
     }, 1000);
 
     setTimeout(function()
     {
-        $("#image-3GS").attr("src", "http://localhost:63342/iphone/images/history/iphone-3gs-combo-2.png");
+        $("#image-3GS").attr("src", "http://student.howest.be/viktor.de.bock/3NMCT/iphone/images/history/iPhone-3gs-combo-2.png");
         $( "#page7-iphone-caption" ).html("Speak the words");
 
     }, 3000);
@@ -69,7 +69,7 @@ function animateIphone3GS()
     setTimeout(function()
     {
         $( "#page7-iphone-caption" ).html("Explore the world");
-        $("#image-3GS").attr("src", "http://localhost:63342/iphone/images/history/iphone-3gs-combo-3.png");
+        $("#image-3GS").attr("src", "http://student.howest.be/viktor.de.bock/3NMCT/iphone/images/history/iPhone-3gs-combo-3.png");
 
     }, 5000);
 

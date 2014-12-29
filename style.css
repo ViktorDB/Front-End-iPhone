@@ -5,20 +5,6 @@
     src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
 }
 
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript,
-if it's not present, don't show loader */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url('../images/ajax-loader.gif') center no-repeat #fff;
-}
 
 
 body
@@ -56,7 +42,6 @@ body
 
 nav
 {
-    display: none;
     position: absolute;
 
     left: 0px;
@@ -158,7 +143,7 @@ nav h1:hover
 nav h1 a:hover
 {
     color: #d7d7d7;
-
+    
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
     -ms-transition: 0.1s;
@@ -260,13 +245,11 @@ nav h1 i
 
 #page-1 h1
 {
-    display: block;
     text-align: center;
     font-size: 70px;
     color: #474747;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
     font-weight: lighter;
-
 }
 
 /* SLIDE 2 */
@@ -1124,14 +1107,11 @@ nav h1 i
     padding-top: 0px;
     position: absolute;
     left: 0px;
-    z-index: 5;
+    z-index: 1;
     width: 100%;
     height: 80px;
     background-color: #f2f2f2;
     opacity: 0.0;
-
-
-
 
     display: none;
 
@@ -1154,8 +1134,6 @@ nav h1 i
 
 #compareSubNav
 {
-    position: relative;
-    top: 0px;
     position: absolute;
     left: 0px;
     z-index: 2;
@@ -1164,8 +1142,6 @@ nav h1 i
     height: 40px;
     background-color: #afafaf;
     opacity: 0.0;
-
-
 
     display: none;
 
@@ -1307,11 +1283,6 @@ nav h1 i
     padding-bottom: 0px;
 }
 
-#compare-wrapper table td:nth-child(odd)
-{
-    font-weight: bolder;
-}
-
 #compare-wrapper table tr:nth-child(even)
 {
     background-color: white;
@@ -1383,12 +1354,12 @@ select option
 
 
 #selectionLeftDiv
-{
+ {
     position: relative;
-    float: left;
-    width: 50%;
-    text-align: center;
-    background-color: #f2f2f2;
+     float: left;
+     width: 50%;
+     text-align: center;
+     background-color: #f2f2f2;
     min-height: 80px;
     height: 80px;
     overflow: hidden;
@@ -1400,12 +1371,7 @@ select option
     -o-transition: 0.3s;
     transition: 0.3s;
 
-
-
-
-
-
-}
+ }
 
 #selectionLeftDiv:hover
 {
@@ -1419,13 +1385,9 @@ select option
 
 #selectionLeftDiv ul
 {
-
     list-style: none;
     margin: 0;
     padding: 0;
-
-
-
 }
 
 #selectionLeftDiv ul li
@@ -1441,8 +1403,6 @@ select option
 {
     background-color: #afafaf;;
     color: #f2f2f2;
-
-
 }
 
 #selectionRightDiv
@@ -1462,8 +1422,6 @@ select option
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-
-
 
 
 }
@@ -1514,12 +1472,6 @@ select option
 {
     background-color: #afafaf;
     color: #f2f2f2;
-
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
 }
 
 #chosenRight
@@ -1533,12 +1485,6 @@ select option
 {
     background-color: #afafaf;
     color: #f2f2f2;
-
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
 }
 
 
@@ -1547,20 +1493,12 @@ select option
 #page-24
 {
     height: 100%;
-    border: 1px solid red;
 }
 
 #page-24 section
 {
-    position: absolute;
-    top: 0%;
-    border: 1px solid deeppink;
-    z-index: 100;
-    height: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: white;
-    width: 100%;
+    height: 10%;
+    margin-bottom: 40px;
 }
 
 #page-24 section h2
@@ -1575,7 +1513,6 @@ select option
 
 #geolocate
 {
-    position: relative;
     margin-top: 50px;
     width: 130px;
     height: 50px;
@@ -1602,10 +1539,11 @@ select option
 
 #map
 {
-    position: absolute;
+    position: relative;
+    top:100px;
     bottom:0;
     width:100%;
-    height: 100%;
+    height: 600px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -1678,45 +1616,45 @@ select option
         width: 80px;
     }
 
-    /*    #page-3 #iphone-2g-front
-        {
-            float: left;
-            position: relative;
-            z-index: 10;
-            width: 190px;
-            height: auto;
-        }
+/*    #page-3 #iphone-2g-front
+    {
+        float: left;
+        position: relative;
+        z-index: 10;
+        width: 190px;
+        height: auto;
+    }
 
-        #page-3 #iphone-2g-front img
-        {
-            max-width: 200px;
-            width: auto;
-            height: auto;
-        }
+    #page-3 #iphone-2g-front img
+    {
+        max-width: 200px;
+        width: auto;
+        height: auto;
+    }
 
-        #page-3 #iphone-2g-back
-        {
-            left: -290px;
-            float: left;
-            position: relative;
-            z-index: 9;
-            width: 250px;
-            height: auto;
+    #page-3 #iphone-2g-back
+    {
+        left: -290px;
+        float: left;
+        position: relative;
+        z-index: 9;
+        width: 250px;
+        height: auto;
 
-            -webkit-transition: 1.5s;
-            -moz-transition: 1.5s;
-            -ms-transition: 1.5s;
-            -o-transition: 1.5s;
-            transition: 1.5s;
-        }
+        -webkit-transition: 1.5s;
+        -moz-transition: 1.5s;
+        -ms-transition: 1.5s;
+        -o-transition: 1.5s;
+        transition: 1.5s;
+    }
 
-        #page-3 #iphone-2g-back img
-        {
-            padding-top: 80px;
-            max-width: 200px;
-            width: auto;
-            height: auto;
-        }*/
+    #page-3 #iphone-2g-back img
+    {
+        padding-top: 80px;
+        max-width: 200px;
+        width: auto;
+        height: auto;
+    }*/
 
     .history-images-center-big
     {

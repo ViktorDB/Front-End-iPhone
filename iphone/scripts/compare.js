@@ -131,11 +131,15 @@ $("#chosenLeft").click(function(){
         $( "#selectionRightDiv" ).css( "background-color", "#f2f2f2" );
 
         listLeftOut = true;
+
     }
     else
     {
         listLeftOut = false;
         $( "#selectionLeftDiv" ).css( "height", "80px" );
+
+        $( "#compareSubNav" ).css( "display", "block" );
+        setTimeout(function(){ $( "#compareSubNav" ).css( "opacity", "1" ); }, 5);
     }
 
 
@@ -154,12 +158,16 @@ $("#chosenRight").click(function(){
         $("#selectionLeftDiv").css("height", "80px");
         $("#selectionLeftDiv").css("background-color", "#f2f2f2");
 
+
         listRightOut = true;
     }
     else
     {
         listRightOut = false;
         $( "#selectionRightDiv" ).css( "height", "80px" );
+
+        $( "#compareSubNav" ).css( "display", "block" );
+        setTimeout(function(){ $( "#compareSubNav" ).css( "opacity", "1" ); }, 5);
     }
 });
 
