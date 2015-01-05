@@ -2,7 +2,7 @@
     font-family: 'Myriad Pro Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+    src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
 }
 
 /* Paste this css to your style sheet file or under head tag */
@@ -106,6 +106,7 @@ nav img
     margin-right: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
+
 }
 
 nav ul
@@ -209,6 +210,8 @@ nav li:hover
 
 #history-sort
 {
+
+
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s ;
     -ms-transition: 0.1s ;
@@ -1547,14 +1550,12 @@ select option
 #page-24
 {
     height: 100%;
-    border: 1px solid red;
 }
 
 #page-24 section
 {
     position: absolute;
     top: 0%;
-    border: 1px solid deeppink;
     z-index: 100;
     height: auto;
     padding-top: 40px;
@@ -1605,10 +1606,10 @@ select option
     position: absolute;
     bottom:0;
     width:100%;
-    height: 100%;
+    height: 98%;
 }
 
-@media screen and (max-width: 1080px) {
+@media only screen and (max-width: 1080px) {
 
     #nav-icon
     {
@@ -1624,6 +1625,7 @@ select option
     {
         margin-top: 60px;
         margin-bottom: 60px;
+        zoom: 90%;
     }
 
     #page-11 .history-images-center-big
@@ -1643,7 +1645,12 @@ select option
 
 }
 
-@media screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
+    
+    #compareSubNav ul
+    {
+        width: 100vw;
+    }
 
     #nav-icon
     {
@@ -1659,6 +1666,7 @@ select option
     {
         margin-top: 60px;
         margin-bottom: 60px;
+        zoom: 70%;
     }
 
     #page-11 .history-images-center-big
@@ -1671,7 +1679,7 @@ select option
 
 
 
-@media screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) {
 
     #nav-icon
     {
@@ -1727,11 +1735,12 @@ select option
     {
         margin-top: 60px;
         margin-bottom: 60px;
+        zoom: 80%;
     }
 
     #page-11 .history-images-center-big
     {
-        zoom: 40%;
+        zoom: 50%;
     }
 
     #page-3 .iphone-caption
@@ -1782,9 +1791,11 @@ select option
         zoom: 70%;
     }
 
+
+
 }
 
-@media screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) {
 
     #nav-icon
     {
@@ -1796,10 +1807,13 @@ select option
         zoom: 50%;
     }
 
+
+
     .iphone-caption
     {
         margin-top: 60px;
         margin-bottom: 60px;
+        zoom: 80%;
     }
 
     #page-11 .history-images-center-big
@@ -1814,7 +1828,7 @@ select option
 
 }
 
-@media screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
 
     #nav-icon
     {
@@ -1830,11 +1844,12 @@ select option
     {
         margin-top: 60px;
         margin-bottom: 90px;
+        zoom: 70%;
     }
 
     #page-11 .history-images-center-big
     {
-        zoom: 40%;
+        zoom: 30%;
     }
 
     .history-right
