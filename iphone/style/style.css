@@ -230,7 +230,7 @@ nav ul li a
 {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 127px;
+    padding-right: 120px;
     padding-left: 40px;
 }
 
@@ -385,7 +385,7 @@ nav h1 i
     font-size: 30px;
     font-weight: lighter;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
-    padding-top: 5%;
+    margin-top: 5%;
 }
 
 .date h1
@@ -760,16 +760,19 @@ nav h1 i
 {
     float: left;
     left: 110px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
     position: relative;
     z-index: 10;
     width: 290px;
     height: auto;
 
     -webkit-transition: 1.5s;
-    -moz-transition: 1.5;
-    -ms-transition: 1.5;
-    -o-transition: 1.5;
-    transition: 1.5;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
 }
 
 #page-13 #iphone-5-combo-left img
@@ -789,10 +792,10 @@ nav h1 i
     height: auto;
 
     -webkit-transition: 1.5s;
-    -moz-transition: 1.5;
-    -ms-transition: 1.5;
-    -o-transition: 1.5;
-    transition: 1.5;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
 }
 
 #page-13 #iphone-5-combo-right img
@@ -838,10 +841,10 @@ nav h1 i
     height: auto;
 
     -webkit-transition: 1.5s;
-    -moz-transition: 1.5;
-    -ms-transition: 1.5;
-    -o-transition: 1.5;
-    transition: 1.5;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
 }
 
 #page-15 #iphone-5c-combo-1 img
@@ -862,10 +865,10 @@ nav h1 i
     height: auto;
 
     -webkit-transition: 1.5s;
-    -moz-transition: 1.5;
-    -ms-transition: 1.5;
-    -o-transition: 1.5;
-    transition: 1.5;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
 }
 
 #page-15 #iphone-5c-combo-2 img
@@ -885,10 +888,10 @@ nav h1 i
     height: auto;
 
     -webkit-transition: 1.5s;
-    -moz-transition: 1.5;
-    -ms-transition: 1.5;
-    -o-transition: 1.5;
-    transition: 1.5;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
 }
 
 #page-15 #iphone-5c-combo-3 img
@@ -908,10 +911,10 @@ nav h1 i
     height: auto;
 
     -webkit-transition: 1.5s;
-    -moz-transition: 1.5;
-    -ms-transition: 1.5;
-    -o-transition: 1.5;
-    transition: 1.5;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
 }
 
 #page-15 #iphone-5c-combo4 img
@@ -931,10 +934,10 @@ nav h1 i
     height: auto;
 
     -webkit-transition: 1.5s;
-    -moz-transition: 1.5;
-    -ms-transition: 1.5;
-    -o-transition: 1.5;
-    transition: 1.5;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
 }
 
 #page-15 #iphone-5c-combo-5 img
@@ -990,10 +993,10 @@ nav h1 i
     height: auto;
 
     -webkit-transition: 1.5s;
-    -moz-transition: 1.5;
-    -ms-transition: 1.5;
-    -o-transition: 1.5;
-    transition: 1.5;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
 }
 
 #page-17 #iphone-5s-combo-2 img
@@ -1050,10 +1053,10 @@ nav h1 i
     height: auto;
 
     -webkit-transition: 1.5s;
-    -moz-transition: 1.5;
-    -ms-transition: 1.5;
-    -o-transition: 1.5;
-    transition: 1.5;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
 }
 
 #page-19 #iphone-6plus-1 img
@@ -1115,6 +1118,7 @@ nav h1 i
 
 #compare-wrapper
 {
+    position: relative;
     padding-top: 160px;
     max-width: 1080px;
     height: 100%;
@@ -1619,6 +1623,10 @@ select option
     .history-images-center-big
     {
         zoom: 80%;
+        -ms-zoom: 80%;
+        -webkit-zoom: 80%;
+        -moz-transform: scale(0.8,0.8);
+        -moz-transform-origin: left center;
     }
 
     .iphone-caption
@@ -1626,21 +1634,38 @@ select option
         margin-top: 60px;
         margin-bottom: 60px;
         zoom: 90%;
+        -ms-zoom: 90%;
+        -webkit-zoom: 90%;
+        -moz-transform: scale(0.9,0.9);
+        -moz-transform-origin: left center;
     }
 
     #page-11 .history-images-center-big
     {
         zoom: 50%;
+        -ms-zoom: 50%;
+        -webkit-zoom: 50%;
+        -moz-transform: scale(0.5,0.5);
+        -moz-transform-origin: left center;
     }
 
     #page-1 h1
     {
         zoom: 80%;
+        -ms-zoom: 80%;
+        -webkit-zoom: 80%;
+        -moz-transform: scale(0.8,0.8);
+        -moz-transform-origin: left center;
+
     }
 
     #page-2 div
     {
         zoom: 80%;
+        -ms-zoom: 80%;
+        -webkit-zoom: 80%;
+        -moz-transform: scale(0.8,0.8);
+        -moz-transform-origin: left center;
     }
 
 }
@@ -1660,6 +1685,10 @@ select option
     .history-images-center-big
     {
         zoom: 70%;
+        -ms-zoom: 70%;
+        -webkit-zoom: 70%;
+        -moz-transform: scale(0.7,0.7);
+        -moz-transform-origin: left center;
     }
 
     .iphone-caption
@@ -1667,11 +1696,19 @@ select option
         margin-top: 60px;
         margin-bottom: 60px;
         zoom: 70%;
+        -ms-zoom: 70%;
+        -webkit-zoom: 70%;
+        -moz-transform: scale(0.7,0.7);
+        -moz-transform-origin: left center;
     }
 
     #page-11 .history-images-center-big
     {
         zoom: 40%;
+        -ms-zoom: 40%;
+        -webkit-zoom: 40%;
+        -moz-transform: scale(0.4,0.4);
+        -moz-transform-origin: left center;
     }
 
 }
@@ -1729,6 +1766,10 @@ select option
     .history-images-center-big
     {
         zoom: 60%;
+        -ms-zoom: 60%;
+        -webkit-zoom: 60%;
+        -moz-transform: scale(0.6,0.6);
+        -moz-transform-origin: left center;
     }
 
     .iphone-caption
@@ -1736,11 +1777,19 @@ select option
         margin-top: 60px;
         margin-bottom: 60px;
         zoom: 80%;
+        -ms-zoom: 80%;
+        -webkit-zoom: 80%;
+        -moz-transform: scale(0.8,0.8);
+        -moz-transform-origin: left center;
     }
 
     #page-11 .history-images-center-big
     {
         zoom: 50%;
+        -ms-zoom: 50%;
+        -webkit-zoom: 50%;
+        -moz-transform: scale(0.5,0.5);
+        -moz-transform-origin: left center;
     }
 
     #page-3 .iphone-caption
@@ -1789,6 +1838,11 @@ select option
     #page-2 div
     {
         zoom: 70%;
+
+        -ms-zoom: 70%;
+        -webkit-zoom: 70%;
+        -moz-transform: scale(0.7,0.7);
+        -moz-transform-origin: left center;
     }
 
 
@@ -1805,6 +1859,11 @@ select option
     .history-images-center-big
     {
         zoom: 50%;
+
+        -ms-zoom: 50%;
+        -webkit-zoom: 50%;
+        -moz-transform: scale(0.5,0.5);
+        -moz-transform-origin: left center;
     }
 
 
@@ -1814,16 +1873,31 @@ select option
         margin-top: 60px;
         margin-bottom: 60px;
         zoom: 80%;
+
+        -ms-zoom: 80%;
+        -webkit-zoom: 80%;
+        -moz-transform: scale(0.8,0.8);
+        -moz-transform-origin: left center;
     }
 
     #page-11 .history-images-center-big
     {
         zoom: 40%;
+
+        -ms-zoom: 40%;
+        -webkit-zoom: 40%;
+        -moz-transform: scale(0.4,0.4);
+        -moz-transform-origin: left center;
     }
 
     #page-2 div
     {
         zoom: 60%;
+
+        -ms-zoom: 60%;
+        -webkit-zoom: 60%;
+        -moz-transform: scale(0.6,0.6);
+        -moz-transform-origin: left center;
     }
 
 }
@@ -1838,6 +1912,11 @@ select option
     .history-images-center-big
     {
         zoom: 40%;
+
+        -ms-zoom: 40%;
+        -webkit-zoom: 40%;
+        -moz-transform: scale(0.4,0.4);
+        -moz-transform-origin: left center;
     }
 
     .iphone-caption
@@ -1845,11 +1924,19 @@ select option
         margin-top: 60px;
         margin-bottom: 90px;
         zoom: 70%;
+        -ms-zoom: 70%;
+        -webkit-zoom: 70%;
+        -moz-transform: scale(0.7,0.7);
+        -moz-transform-origin: left center;
     }
 
     #page-11 .history-images-center-big
     {
         zoom: 30%;
+        -ms-zoom: 30%;
+        -webkit-zoom: 30%;
+        -moz-transform: scale(0.3,0.3);
+        -moz-transform-origin: left center;
     }
 
     .history-right
